@@ -4,9 +4,11 @@ describe "Using Each" do
   describe "greet_characters" do
     it "prints out a custom greeting for each name in the provided array" do
       dwarves = ["Dopey", "Grumpy", "Bashful"]
+ 
 
       output = capture_stdout do
         greet_characters(dwarves)
+        
       end
 
       # This regex allows for arbitrary characters between
